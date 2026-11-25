@@ -13964,17 +13964,17 @@ function prepare_captive_portal_data() {
 			language_strings "${language}" 714 "yellow"
 
 			captive_portal_brand="airgeddon_default"
-			captive_portal_bg_color="#1b5e20"
-			captive_portal_button_color="#43a047"
-			captive_portal_shadow_color="#69f0ae"
-			captive_portal_logo=""
+			captive_portal_bg_color="#0d47a1"
+			captive_portal_button_color="#1e88e5"
+			captive_portal_shadow_color="#64b5f6"
+			captive_portal_logo='\t\t\t\t<div class="logo">\n\t\t\t\t\t\t\t<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMjQgMjQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLXdpZHRoPSIxLjgiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+PHBhdGggZD0iTTEyIDE4bC4wMSAwIi8+PHBhdGggZD0iTTkuMTcyIDE1LjE3MmE0IDQgMCAwIDEgNS42NTYgMCIvPjxwYXRoIGQ9Ik02LjM0MyAxMi4zNDNhOCA4IDAgMCAxIDExLjMxNCAwIi8+PHBhdGggZD0iTTMuNTE1IDkuNTE1YzQuNjg2IC00LjY4NyAxMi4yODQgLTQuNjg3IDE3IDAiLz48L3N2Zz4K" title="Logo" style="display: block; margin: auto; width: 200px;"/>\n\t\t\t\t\t\t</div>'
 		fi
 	else
 		captive_portal_brand="airgeddon_default"
-		captive_portal_bg_color="#1b5e20"
-		captive_portal_button_color="#43a047"
-		captive_portal_shadow_color="#69f0ae"
-		captive_portal_logo=""
+		captive_portal_bg_color="#0d47a1"
+		captive_portal_button_color="#1e88e5"
+		captive_portal_shadow_color="#64b5f6"
+		captive_portal_logo='\t\t\t\t<div class="logo">\n\t\t\t\t\t\t\t<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMjQgMjQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLXdpZHRoPSIxLjgiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+PHBhdGggZD0iTTEyIDE4bC4wMSAwIi8+PHBhdGggZD0iTTkuMTcyIDE1LjE3MmE0IDQgMCAwIDEgNS42NTYgMCIvPjxwYXRoIGQ9Ik02LjM0MyAxMi4zNDNhOCA4IDAgMCAxIDExLjMxNCAwIi8+PHBhdGggZD0iTTMuNTE1IDkuNTE1YzQuNjg2IC00LjY4NyAxMi4yODQgLTQuNjg3IDE3IDAiLz48L3N2Zz4K" title="Logo" style="display: block; margin: auto; width: 200px;"/>\n\t\t\t\t\t\t</div>'
 	fi
 }
 
@@ -14076,7 +14076,7 @@ function set_captive_portal_page() {
 	echo -e "echo -e '\t\t<img src=\"${pixelfile}\" style=\"display: none;\"/>'"
 	echo -e "echo -e '\t\t<div class=\"content\">'"
 	echo -e "echo -e '\t\t\t<form method=\"post\" id=\"loginform\" name=\"loginform\" action=\"check.htm\">'"
-	if [ "${advanced_captive_portal}" -eq 1 ]; then
+	if [ -n "${captive_portal_logo}" ]; then
 		echo -e "echo -e '${captive_portal_logo}'"
 	fi
 	echo -e "echo -e '\t\t\t\t<div class=\"title\">'"
