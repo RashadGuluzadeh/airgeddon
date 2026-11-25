@@ -26,7 +26,6 @@ declare -A lang_association=(
 								["tr"]="TURKISH"
 								["ar"]="ARABIC"
 								["zh"]="CHINESE"
-								["az"]="AZERBAIJANI"
 							)
 
 rtl_languages=(
@@ -3125,7 +3124,6 @@ function language_menu() {
 	language_strings "${language}" 519
 	language_strings "${language}" 687
 	language_strings "${language}" 717
-	language_strings "${language}" 856
 	print_hint
 
 	read -rp "> " language_selected
@@ -3247,15 +3245,6 @@ function language_menu() {
 				language_strings "${language}" 251 "red"
 			else
 				language="CHINESE"
-				language_strings "${language}" 83 "yellow"
-			fi
-			language_strings "${language}" 115 "read"
-		;;
-		14)
-			if [ "${language}" = "AZERBAIJANI" ]; then
-				language_strings "${language}" 251 "red"
-			else
-				language="AZERBAIJANI"
 				language_strings "${language}" 83 "yellow"
 			fi
 			language_strings "${language}" 115 "read"

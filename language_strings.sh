@@ -13117,9 +13117,6 @@ function replace_string_vars() {
 
 	local message
 	message=${arr[${1},${2}]}
-	if [ -z "${message}" ] && [ "${1}" != "ENGLISH" ]; then
-		message=${arr["ENGLISH",${2}]}
-	fi
 	parsed_message=$(echo "${message}" | sed -E 's/\"/\\\"/g')
 	eval "echo -e \"${parsed_message}\""
 }
