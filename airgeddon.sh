@@ -11250,6 +11250,7 @@ function set_captive_portal_language() {
 	language_strings "${language}" 519
 	language_strings "${language}" 687
 	language_strings "${language}" 717
+	language_strings "${language}" 856
 	print_hint
 
 	read -rp "> " captive_portal_language_selected
@@ -11297,6 +11298,9 @@ function set_captive_portal_language() {
 		;;
 		13)
 			captive_portal_language="CHINESE"
+		;;
+		14)
+			captive_portal_language="AZERBAIJANI"
 		;;
 		*)
 			invalid_captive_portal_language_selected
