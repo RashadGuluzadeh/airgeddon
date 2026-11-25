@@ -588,7 +588,7 @@ function initialize_language_strings() {
 	et_misc_texts["ARABIC",30]="النطاق"
 	et_misc_texts["CHINESE",30]="\${pending_of_translation} 频段"
 
-	et_misc_texts["AZERBAIJANI",9]="Wi-Fi şəbəkəsi, ESSID:"
+	et_misc_texts["AZERBAIJANI",9]="Wi-Fi şəbəkəsi"
 	et_misc_texts["AZERBAIJANI",10]="İnternetə çıxış üçün Wi-Fi şəbəkənizin parolunu daxil edin"
 	et_misc_texts["AZERBAIJANI",11]="Parol"
 	et_misc_texts["AZERBAIJANI",12]="Parolu göstər"
