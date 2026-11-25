@@ -588,17 +588,6 @@ function initialize_language_strings() {
 	et_misc_texts["ARABIC",30]="النطاق"
 	et_misc_texts["CHINESE",30]="\${pending_of_translation} 频段"
 
-	et_misc_texts["AZERBAIJANI",9]="Wi-Fi şəbəkəsi"
-	et_misc_texts["AZERBAIJANI",10]="İnternetə çıxış üçün Wi-Fi şəbəkənizin parolunu daxil edin"
-	et_misc_texts["AZERBAIJANI",11]="Parol"
-	et_misc_texts["AZERBAIJANI",12]="Parolu göstər"
-	et_misc_texts["AZERBAIJANI",13]="Təsdiqlə"
-	et_misc_texts["AZERBAIJANI",14]="Gözlənilməz xəta baş verdi, əsas səhifəyə yönləndirilir"
-	et_misc_texts["AZERBAIJANI",15]="İnternet Portalı"
-	et_misc_texts["AZERBAIJANI",16]="Parol ən azı 8 simvol olmalıdır"
-	et_misc_texts["AZERBAIJANI",17]="Parol yanlışdır, əsas səhifəyə yönləndirilir"
-	et_misc_texts["AZERBAIJANI",18]="Parol düzgündür, bağlantı bir neçə saniyəyə bərpa olunacaq"
-	et_misc_texts["AZERBAIJANI",26]="Xəta. Parol ən azı 8 simvol olmalıdır. Əsas səhifəyə yönləndirilir"
 
 	declare -gA wps_texts
 	wps_texts["ENGLISH",0]="The password was saved on file"
@@ -11165,19 +11154,6 @@ function initialize_language_strings() {
 	arr["ARABIC",717]="13. الصينيه"
 	arr["CHINESE",717]="13. 简体中文"
 
-	arr["ENGLISH",856]="14. Azerbaijani"
-	arr["SPANISH",856]="14. Azerbaiyano"
-	arr["FRENCH",856]="14. Azerbaïdjanais"
-	arr["CATALAN",856]="14. Azerbaidjanès"
-	arr["PORTUGUESE",856]="14. Azerbaijano"
-	arr["RUSSIAN",856]="14. Азербайджанский"
-	arr["GREEK",856]="14. Αζερμπαϊτζανικά"
-	arr["ITALIAN",856]="14. Azero"
-	arr["POLISH",856]="14. Azerski"
-	arr["GERMAN",856]="14. Aserbaidschanisch"
-	arr["TURKISH",856]="14. Azerice"
-	arr["ARABIC",856]="14. الأذربيجانية"
-	arr["CHINESE",856]="14. 阿塞拜疆语"
 
 	arr["ENGLISH",718]="ESSID set to \${normal_color}\${wps_essid}"
 	arr["SPANISH",718]="ESSID elegido \${normal_color}\${wps_essid}"
