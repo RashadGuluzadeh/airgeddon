@@ -5039,6 +5039,7 @@ function prepare_wep_attack() {
 function set_wep_key_script() {
 
 	debug_print
+	printf -v escaped_essid "%q" "${essid}"
 
 	exec 8>"${tmpdir}${wep_key_handler}"
 
@@ -5118,7 +5119,7 @@ function set_wep_key_script() {
 				echo -e "BSSID: ${bssid}"
 				echo -e "${wep_texts[${language},2]}: ${channel}"
 				echo -e "${wep_texts[${language},7]}: ${target_band_id}"
-				echo -e "ESSID: ${essid}"
+				echo -e "ESSID: ${escaped_essid}"
 				echo ""
 				echo "---------------"
 				echo ""
@@ -13161,6 +13162,7 @@ function set_wps_attack_script() {
 function set_enterprise_control_script() {
 
 	debug_print
+	printf -v escaped_essid "%q" "${essid}"
 
 	exec 7>"${tmpdir}${control_enterprise_file}"
 
@@ -13367,7 +13369,7 @@ function set_enterprise_control_script() {
 				tput ed
 			fi
 
-			echo -e "\t${yellow_color}${enterprise_texts[${language},0]} ${white_color}// ${blue_color}BSSID: ${normal_color}${bssid} ${yellow_color}// ${blue_color}${enterprise_texts[${language},1]}: ${normal_color}\${et_control_window_channel} ${yellow_color}// ${blue_color}${enterprise_texts[${language},12]}: ${normal_color}\${et_control_window_band} ${yellow_color}// ${blue_color}ESSID: ${normal_color}${essid}"
+			echo -e "\t${yellow_color}${enterprise_texts[${language},0]} ${white_color}// ${blue_color}BSSID: ${normal_color}${bssid} ${yellow_color}// ${blue_color}${enterprise_texts[${language},1]}: ${normal_color}\${et_control_window_channel} ${yellow_color}// ${blue_color}${enterprise_texts[${language},12]}: ${normal_color}\${et_control_window_band} ${yellow_color}// ${blue_color}ESSID: ${normal_color}${escaped_essid}"
 			echo
 			echo -e "\t${green_color}${enterprise_texts[${language},2]}${normal_color}"
 
@@ -13449,6 +13451,7 @@ function set_enterprise_control_script() {
 function set_et_control_script() {
 
 	debug_print
+	printf -v escaped_essid "%q" "${essid}"
 
 	rm -rf "${tmpdir}${control_et_file}" > /dev/null 2>&1
 
@@ -13619,7 +13622,7 @@ function set_et_control_script() {
 	esac
 
 	cat >&7 <<-EOF
-			echo -e "\t${yellow_color}${et_misc_texts[${language},0]} ${white_color}// ${blue_color}BSSID: ${normal_color}${bssid} ${yellow_color}// ${blue_color}${et_misc_texts[${language},1]}: ${normal_color}\${et_control_window_channel} ${yellow_color}// ${blue_color}${et_misc_texts[${language},30]}: ${normal_color}\${et_control_window_band} ${yellow_color}// ${blue_color}ESSID: ${normal_color}${essid}"
+			echo -e "\t${yellow_color}${et_misc_texts[${language},0]} ${white_color}// ${blue_color}BSSID: ${normal_color}${bssid} ${yellow_color}// ${blue_color}${et_misc_texts[${language},1]}: ${normal_color}\${et_control_window_channel} ${yellow_color}// ${blue_color}${et_misc_texts[${language},30]}: ${normal_color}\${et_control_window_band} ${yellow_color}// ${blue_color}ESSID: ${normal_color}${escaped_essid}"
 			echo
 			echo -e "\t${green_color}${et_misc_texts[${language},2]}${normal_color}"
 
@@ -13632,7 +13635,7 @@ function set_et_control_script() {
 			if [ "\${et_heredoc_mode}" = "et_captive_portal" ]; then
 				if [ -f "${tmpdir}${webdir}${et_successfile}" ]; then
 					clear
-					echo -e "\t${yellow_color}${et_misc_texts[${language},0]} ${white_color}// ${blue_color}BSSID: ${normal_color}${bssid} ${yellow_color}// ${blue_color}${et_misc_texts[${language},1]}: ${normal_color}${channel} ${yellow_color}// ${blue_color}${et_misc_texts[${language},30]}: ${normal_color}${target_band_id} ${yellow_color}// ${blue_color}ESSID: ${normal_color}${essid}"
+					echo -e "\t${yellow_color}${et_misc_texts[${language},0]} ${white_color}// ${blue_color}BSSID: ${normal_color}${bssid} ${yellow_color}// ${blue_color}${et_misc_texts[${language},1]}: ${normal_color}${channel} ${yellow_color}// ${blue_color}${et_misc_texts[${language},30]}: ${normal_color}${target_band_id} ${yellow_color}// ${blue_color}ESSID: ${normal_color}${escaped_essid}"
 					echo
 					echo -e "\t${green_color}${et_misc_texts[${language},2]}${normal_color}"
 					echo -e "\t\${hours}:\${mins}:\${secs}"
