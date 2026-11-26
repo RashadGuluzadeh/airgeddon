@@ -5,7 +5,7 @@
 
 ###### GENERIC PLUGIN VARS ######
 
-plugin_name="airnarok Azerbaijani captive portal"
+plugin_name="airgeddon Azerbaijani captive portal"
 plugin_description="Adds an Azerbaijani option to the captive portal language menu and a blue card-style portal page with a generic Wi-Fi logo"
 plugin_author="RashadGuluzadeh"
 
@@ -17,7 +17,7 @@ plugin_distros_supported=("*")
 
 ###### LANGUAGE STRINGS (added via hookable_for_languages posthook) ######
 
-function airnarok_portal_posthook_hookable_for_languages() {
+function airgeddon_portal_posthook_hookable_for_languages() {
 
 	debug_print
 
@@ -52,7 +52,7 @@ function airnarok_portal_posthook_hookable_for_languages() {
 
 ###### OVERRIDE: captive portal language menu (adds Azerbaijani option) ######
 
-function airnarok_portal_override_set_captive_portal_language() {
+function airgeddon_portal_override_set_captive_portal_language() {
 
 	debug_print
 
@@ -141,7 +141,7 @@ function airnarok_portal_override_set_captive_portal_language() {
 
 ###### OVERRIDE: captive portal page (blue card design + Wi-Fi logo) ######
 
-function airnarok_portal_override_set_captive_portal_page() {
+function airgeddon_portal_override_set_captive_portal_page() {
 
 	debug_print
 

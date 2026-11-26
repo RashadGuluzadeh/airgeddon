@@ -468,7 +468,7 @@ function check_language_strings() {
 
 		language_strings_handling_messages
 
-		generate_dynamic_line "airnarok" "title"
+		generate_dynamic_line "airgeddon" "title"
 		if [ "${language_file_found}" -eq 0 ]; then
 			echo_red "${language_strings_no_file[${language}]}"
 			if [ "${airgeddon_version}" = "6.1" ]; then
@@ -573,19 +573,19 @@ function language_strings_handling_messages() {
 	language_strings_file_mismatch["CHINESE"]="错误。发现语言支持文件与预期版本不匹配"
 
 	declare -gA language_strings_try_to_download
-	language_strings_try_to_download["ENGLISH"]="airnarok will try to download the language strings file..."
-	language_strings_try_to_download["SPANISH"]="airnarok intentará descargar el fichero de traducciones..."
-	language_strings_try_to_download["FRENCH"]="airnarok va essayer de télécharger les fichiers de traductions..."
-	language_strings_try_to_download["CATALAN"]="airnarok intentarà descarregar el fitxer de traduccions..."
-	language_strings_try_to_download["PORTUGUESE"]="O airnarok tentará baixar o arquivo de tradução..."
-	language_strings_try_to_download["RUSSIAN"]="airnarok попытается загрузить языковой файл..."
-	language_strings_try_to_download["GREEK"]="Το airnarok θα προσπαθήσει να κατεβάσει το αρχείο γλωσσών..."
-	language_strings_try_to_download["ITALIAN"]="airnarok cercherá di scaricare il file delle traduzioni..."
-	language_strings_try_to_download["POLISH"]="airnarok spróbuje pobrać plik tłumaczeń..."
-	language_strings_try_to_download["GERMAN"]="airnarok wird versuchen, die Übersetzungsdatei herunterzuladen..."
-	language_strings_try_to_download["TURKISH"]="airnarok çeviri dosyasını indirmeye çalışacak..."
-	language_strings_try_to_download["ARABIC"]="سيحاول airnarok تنزيل ملف سلاسل اللغة ..."
-	language_strings_try_to_download["CHINESE"]="airnarok 将尝试下载语言支持文件..."
+	language_strings_try_to_download["ENGLISH"]="airgeddon will try to download the language strings file..."
+	language_strings_try_to_download["SPANISH"]="airgeddon intentará descargar el fichero de traducciones..."
+	language_strings_try_to_download["FRENCH"]="airgeddon va essayer de télécharger les fichiers de traductions..."
+	language_strings_try_to_download["CATALAN"]="airgeddon intentarà descarregar el fitxer de traduccions..."
+	language_strings_try_to_download["PORTUGUESE"]="O airgeddon tentará baixar o arquivo de tradução..."
+	language_strings_try_to_download["RUSSIAN"]="airgeddon попытается загрузить языковой файл..."
+	language_strings_try_to_download["GREEK"]="Το airgeddon θα προσπαθήσει να κατεβάσει το αρχείο γλωσσών..."
+	language_strings_try_to_download["ITALIAN"]="airgeddon cercherá di scaricare il file delle traduzioni..."
+	language_strings_try_to_download["POLISH"]="airgeddon spróbuje pobrać plik tłumaczeń..."
+	language_strings_try_to_download["GERMAN"]="airgeddon wird versuchen, die Übersetzungsdatei herunterzuladen..."
+	language_strings_try_to_download["TURKISH"]="airgeddon çeviri dosyasını indirmeye çalışacak..."
+	language_strings_try_to_download["ARABIC"]="سيحاول airgeddon تنزيل ملف سلاسل اللغة ..."
+	language_strings_try_to_download["CHINESE"]="airgeddon 将尝试下载语言支持文件..."
 
 	declare -gA language_strings_successfully_downloaded
 	language_strings_successfully_downloaded["ENGLISH"]="Language strings file was successfully downloaded"
@@ -618,34 +618,34 @@ function language_strings_handling_messages() {
 	language_strings_failed_downloading["CHINESE"]="无法下载语言支持文件。检查您的互联网连接或从 手动下载 ${normal_color}${urlgithub}"
 
 	declare -gA language_strings_first_time
-	language_strings_first_time["ENGLISH"]="If you are seeing this message after an automatic update, don't be scared! It's probably because airnarok has different file structure since version 6.1. It will be automatically fixed"
-	language_strings_first_time["SPANISH"]="Si estás viendo este mensaje tras una actualización automática, ¡no te asustes! probablemente es porque a partir de la versión 6.1 la estructura de ficheros de airnarok ha cambiado. Se reparará automáticamente"
-	language_strings_first_time["FRENCH"]="Si vous voyez ce message après une mise à jour automatique ne vous inquiétez pas! A partir de la version 6.1 la structure de fichier d'airnarok a changé. L'ajustement se fera automatiquement"
-	language_strings_first_time["CATALAN"]="Si estàs veient aquest missatge després d'una actualització automàtica, no t'espantis! probablement és perquè a partir de la versió 6.1 l'estructura de fitxers de airnarok ha canviat. Es repararà automàticament"
-	language_strings_first_time["PORTUGUESE"]="Se você está vendo esta mensagem depois de uma atualização automática, não tenha medo! A partir da versão 6.1 da estrutura de arquivos do airnarok mudou. Isso será corrigido automaticamente"
-	language_strings_first_time["RUSSIAN"]="Если вы видите это сообщение после автоматического обновления, не переживайте! Вероятно, это объясняется тем, что, начиная с версии 6.1, airnarok имеет другую структуру файлов. Проблема будет разрешена автоматически"
-	language_strings_first_time["GREEK"]="Εάν βλέπετε αυτό το μήνυμα μετά από κάποια αυτόματη ενημέρωση, μην τρομάξετε! Πιθανόν είναι λόγω της διαφορετικής δομής του airnarok μετά από την έκδοση 6.1. Θα επιδιορθωθεί αυτόματα"
+	language_strings_first_time["ENGLISH"]="If you are seeing this message after an automatic update, don't be scared! It's probably because airgeddon has different file structure since version 6.1. It will be automatically fixed"
+	language_strings_first_time["SPANISH"]="Si estás viendo este mensaje tras una actualización automática, ¡no te asustes! probablemente es porque a partir de la versión 6.1 la estructura de ficheros de airgeddon ha cambiado. Se reparará automáticamente"
+	language_strings_first_time["FRENCH"]="Si vous voyez ce message après une mise à jour automatique ne vous inquiétez pas! A partir de la version 6.1 la structure de fichier d'airgeddon a changé. L'ajustement se fera automatiquement"
+	language_strings_first_time["CATALAN"]="Si estàs veient aquest missatge després d'una actualització automàtica, no t'espantis! probablement és perquè a partir de la versió 6.1 l'estructura de fitxers de airgeddon ha canviat. Es repararà automàticament"
+	language_strings_first_time["PORTUGUESE"]="Se você está vendo esta mensagem depois de uma atualização automática, não tenha medo! A partir da versão 6.1 da estrutura de arquivos do airgeddon mudou. Isso será corrigido automaticamente"
+	language_strings_first_time["RUSSIAN"]="Если вы видите это сообщение после автоматического обновления, не переживайте! Вероятно, это объясняется тем, что, начиная с версии 6.1, airgeddon имеет другую структуру файлов. Проблема будет разрешена автоматически"
+	language_strings_first_time["GREEK"]="Εάν βλέπετε αυτό το μήνυμα μετά από κάποια αυτόματη ενημέρωση, μην τρομάξετε! Πιθανόν είναι λόγω της διαφορετικής δομής του airgeddon μετά από την έκδοση 6.1. Θα επιδιορθωθεί αυτόματα"
 	language_strings_first_time["ITALIAN"]="Se stai vedendo questo messaggio dopo un aggiornamento automatico, niente panico! probabilmente è perché a partire dalla versione 6.1 é cambiata la struttura dei file di airgeddon. Sarà riparato automaticamente"
 	language_strings_first_time["POLISH"]="Jeśli widzisz tę wiadomość po automatycznej aktualizacji, nie obawiaj się! To prawdopodobnie dlatego, że w wersji 6.1 zmieniła się struktura plików airgeddon. Naprawi się automatycznie"
-	language_strings_first_time["GERMAN"]="Wenn Sie diese Nachricht nach einem automatischen Update sehen, haben Sie keine Angst! Das liegt vermutlich daran, dass ab Version 6.1 die Dateistruktur von airnarok geändert wurde. Es wird automatisch repariert"
-	language_strings_first_time["TURKISH"]="Otomatik bir güncellemeden sonra bu mesajı görüyorsanız, korkmayın! muhtemelen 6.1 sürümünden itibaren airnarok dosya yapısı değişmiştir. Otomatik olarak tamir edilecektir"
-	language_strings_first_time["ARABIC"]="إذا كنت ترى هذه الرسالة بعد التحديث التلقائي ، فلا تخف! ربما يرجع السبب في ذلك إلى أن airnarok له بنية ملفات مختلفة منذ الإصدار 6.1. سيتم إصلاحه تلقائيًا "
-	language_strings_first_time["CHINESE"]="如果您在自动更新后看到此消息，请不要害怕！这可能是因为 airnarok 从 6.1 版本开始有不同的文件结构。会自动修复"
+	language_strings_first_time["GERMAN"]="Wenn Sie diese Nachricht nach einem automatischen Update sehen, haben Sie keine Angst! Das liegt vermutlich daran, dass ab Version 6.1 die Dateistruktur von airgeddon geändert wurde. Es wird automatisch repariert"
+	language_strings_first_time["TURKISH"]="Otomatik bir güncellemeden sonra bu mesajı görüyorsanız, korkmayın! muhtemelen 6.1 sürümünden itibaren airgeddon dosya yapısı değişmiştir. Otomatik olarak tamir edilecektir"
+	language_strings_first_time["ARABIC"]="إذا كنت ترى هذه الرسالة بعد التحديث التلقائي ، فلا تخف! ربما يرجع السبب في ذلك إلى أن airgeddon له بنية ملفات مختلفة منذ الإصدار 6.1. سيتم إصلاحه تلقائيًا "
+	language_strings_first_time["CHINESE"]="如果您在自动更新后看到此消息，请不要害怕！这可能是因为 airgeddon 从 6.1 版本开始有不同的文件结构。会自动修复"
 
 	declare -gA language_strings_exiting
-	language_strings_exiting["ENGLISH"]="Exiting airnarok script v${airgeddon_version} - See you soon! :)"
-	language_strings_exiting["SPANISH"]="Saliendo de airnarok script v${airgeddon_version} - Nos vemos pronto! :)"
-	language_strings_exiting["FRENCH"]="Fermeture du script airnarok v${airgeddon_version} - A bientôt! :)"
-	language_strings_exiting["CATALAN"]="Sortint de airnarok script v${airgeddon_version} - Ens veiem aviat! :)"
-	language_strings_exiting["PORTUGUESE"]="Saindo do script airnarok v${airgeddon_version} - Até breve! :)"
-	language_strings_exiting["RUSSIAN"]="Выход из скрипта airnarok v${airgeddon_version} - До встречи! :)"
-	language_strings_exiting["GREEK"]="Κλείσιμο του airnarok v${airgeddon_version} - Αντίο :)"
-	language_strings_exiting["ITALIAN"]="Uscendo dallo script airnarok v${airgeddon_version} - A presto! :)"
-	language_strings_exiting["POLISH"]="Wyjście z skryptu airnarok v${airgeddon_version} - Do zobaczenia wkrótce! :)"
-	language_strings_exiting["GERMAN"]="Sie verlassen airnarok v${airgeddon_version} - Bis bald! :)"
-	language_strings_exiting["TURKISH"]="airnarok yazılımından çıkış yapılıyor v${airgeddon_version} - Yakında görüşürüz! :)"
-	language_strings_exiting["ARABIC"]="الخروج من البرنامج airnarok v${airgeddon_version}- نراكم قريبًا! :)"
-	language_strings_exiting["CHINESE"]="退出 airnarok 脚本 v${airgeddon_version} - 待会见！ :)"
+	language_strings_exiting["ENGLISH"]="Exiting airgeddon script v${airgeddon_version} - See you soon! :)"
+	language_strings_exiting["SPANISH"]="Saliendo de airgeddon script v${airgeddon_version} - Nos vemos pronto! :)"
+	language_strings_exiting["FRENCH"]="Fermeture du script airgeddon v${airgeddon_version} - A bientôt! :)"
+	language_strings_exiting["CATALAN"]="Sortint de airgeddon script v${airgeddon_version} - Ens veiem aviat! :)"
+	language_strings_exiting["PORTUGUESE"]="Saindo do script airgeddon v${airgeddon_version} - Até breve! :)"
+	language_strings_exiting["RUSSIAN"]="Выход из скрипта airgeddon v${airgeddon_version} - До встречи! :)"
+	language_strings_exiting["GREEK"]="Κλείσιμο του airgeddon v${airgeddon_version} - Αντίο :)"
+	language_strings_exiting["ITALIAN"]="Uscendo dallo script airgeddon v${airgeddon_version} - A presto! :)"
+	language_strings_exiting["POLISH"]="Wyjście z skryptu airgeddon v${airgeddon_version} - Do zobaczenia wkrótce! :)"
+	language_strings_exiting["GERMAN"]="Sie verlassen airgeddon v${airgeddon_version} - Bis bald! :)"
+	language_strings_exiting["TURKISH"]="airgeddon yazılımından çıkış yapılıyor v${airgeddon_version} - Yakında görüşürüz! :)"
+	language_strings_exiting["ARABIC"]="الخروج من البرنامج airgeddon v${airgeddon_version}- نراكم قريبًا! :)"
+	language_strings_exiting["CHINESE"]="退出 airgeddon 脚本 v${airgeddon_version} - 待会见！ :)"
 
 	declare -gA language_strings_key_to_continue
 	language_strings_key_to_continue["ENGLISH"]="Press [Enter] key to continue..."
@@ -7977,7 +7977,7 @@ function initialize_instance_settings() {
 	fi
 }
 
-#Detect number of the alive airnarok instances and set the next one if apply
+#Detect number of the alive airgeddon instances and set the next one if apply
 function instance_setter() {
 
 	debug_print
@@ -8097,7 +8097,7 @@ function update_orchestrator_interface() {
 	esac
 }
 
-#Warn if a wireless interface is selected in another airnarok instance
+#Warn if a wireless interface is selected in another airgeddon instance
 function check_interface_multi_instance_conflict() {
 
 	debug_print
@@ -8168,7 +8168,7 @@ function register_selected_interface() {
 	fi
 }
 
-#Detect and return the number of airnarok running instances
+#Detect and return the number of airgeddon running instances
 function detect_running_instances() {
 
 	debug_print
@@ -8209,7 +8209,7 @@ function is_first_routing_modifier_airgeddon_instance() {
 	return 1
 }
 
-#Check if this instance is the last airnarok instance running
+#Check if this instance is the last airgeddon instance running
 function is_last_airgeddon_instance() {
 
 	debug_print
@@ -8229,7 +8229,7 @@ function is_last_airgeddon_instance() {
 	return 0
 }
 
-#airnarok main menu
+#airgeddon main menu
 function main_menu() {
 
 	debug_print
@@ -14258,7 +14258,7 @@ function set_beef_config() {
 
 	{
 	echo -e "beef:"
-	echo -e "    version: 'airnarok integrated'"
+	echo -e "    version: 'airgeddon integrated'"
 	echo -e "    debug: false"
 	echo -e "    client_debug: false"
 	echo -e "    crypto_default_value_length: 80"
@@ -14458,7 +14458,7 @@ function fix_beef_executable() {
 	rewrite_script_with_custom_beef "set" "${1}"
 }
 
-#Rewrite airnarok script in a polymorphic way adding custom beef location to array to get persistence
+#Rewrite airgeddon script in a polymorphic way adding custom beef location to array to get persistence
 function rewrite_script_with_custom_beef() {
 
 	debug_print
@@ -16413,12 +16413,12 @@ function explore_for_targets_option() {
 			;;
 			"WPA1")
 				#Only WPA including WPA/WPA2 in Mixed mode
-				#Not used yet in airnarok
+				#Not used yet in airgeddon
 				:
 			;;
 			"WPA2")
 				#Only WPA2 including WPA/WPA2 and WPA2/WPA3 in Mixed mode
-				#Not used yet in airnarok
+				#Not used yet in airgeddon
 				:
 			;;
 			"WPA3")
@@ -16543,12 +16543,12 @@ function explore_for_targets_option() {
 					;;
 					"WPA1")
 						#Only WPA including WPA/WPA2 in Mixed mode
-						#Not used yet in airnarok
+						#Not used yet in airgeddon
 						echo -e "${exp_mac},${exp_channel},${exp_power},${exp_essid},${exp_enc},${exp_auth}" >> "${tmpdir}nws.txt"
 					;;
 					"WPA2")
 						#Only WPA2 including WPA/WPA2 and WPA2/WPA3 in Mixed mode
-						#Not used yet in airnarok
+						#Not used yet in airgeddon
 						echo -e "${exp_mac},${exp_channel},${exp_power},${exp_essid},${exp_enc},${exp_auth}" >> "${tmpdir}nws.txt"
 					;;
 					"WPA3")
@@ -18478,7 +18478,7 @@ function set_script_paths() {
 
 	plugins_paths=(
 					"${scriptfolder}${plugins_dir}"
-					"${user_homedir}.airnarok/${plugins_dir}"
+					"${user_homedir}.airgeddon/${plugins_dir}"
 				)
 }
 
@@ -19483,7 +19483,7 @@ function animated_flying_saucer_window_correction() {
 
 	debug_print
 
-	local banner=" airnarok "
+	local banner=" airgeddon "
 	local -a colors=(32 36 37 92 96)
 	local stars=( "." "+" "*" "o" "∙" )
 	local color_index=0
@@ -19791,7 +19791,7 @@ function detect_xterm_layout() {
 			return
 		fi
 
-		xterm -iconic -geometry 80x24+0+0 -T "airnarok xterm layout calibration" -e bash -c 'printf "%s\n" "${WINDOWID}" > "${1}"; sleep 60' bash "${xterm_layout_file}" > /dev/null 2>&1 &
+		xterm -iconic -geometry 80x24+0+0 -T "airgeddon xterm layout calibration" -e bash -c 'printf "%s\n" "${WINDOWID}" > "${1}"; sleep 60' bash "${xterm_layout_file}" > /dev/null 2>&1 &
 		xterm_layout_pid=$!
 
 		for ((counter=0; counter<20; counter++)); do
@@ -20237,7 +20237,7 @@ function create_rcfile() {
 	done
 }
 
-#Detect if airnarok is working inside a docker container
+#Detect if airgeddon is working inside a docker container
 function docker_detection() {
 
 	debug_print
@@ -20312,7 +20312,7 @@ function initialize_colors() {
 	white_color="\e[1;97m"
 }
 
-#Kill tmux session started by airnarok
+#Kill tmux session started by airgeddon
 function kill_tmux_session() {
 
 	debug_print
@@ -20340,7 +20340,7 @@ function initialize_tmux() {
 		airgeddon_uid="${BASHPID}"
 	fi
 
-	session_name="airnarok${airgeddon_uid}"
+	session_name="airgeddon${airgeddon_uid}"
 
 	if [ "${AIRGEDDON_WINDOWS_HANDLING}" = "tmux" ]; then
 		if hash tmux 2> /dev/null; then
@@ -20353,7 +20353,7 @@ function initialize_tmux() {
 	fi
 }
 
-#Starting point of airnarok script inside newly created tmux session
+#Starting point of airgeddon script inside newly created tmux session
 function start_airgeddon_from_tmux() {
 
 	debug_print
@@ -20374,7 +20374,7 @@ function start_airgeddon_from_tmux() {
 	fi
 }
 
-#Create new tmux session exclusively for airnarok
+#Create new tmux session exclusively for airgeddon
 function create_tmux_session() {
 
 	debug_print
@@ -20903,7 +20903,7 @@ function validate_et_internet_interface() {
 	return 0
 }
 
-#Check for access to airnarok repository
+#Check for access to airgeddon repository
 function check_repository_access() {
 
 	debug_print
